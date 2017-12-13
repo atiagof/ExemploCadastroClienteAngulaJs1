@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/bootstrap.css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/ui-grid.css" rel="stylesheet" />
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="/Content/ie10-viewport-bug-workaround.css" rel="stylesheet" />
+    <link href="/Content/theme.css" rel="stylesheet" />
+    <link href="/Content/SearchForm.css" rel="stylesheet" />
+    <link href="/Content/proxima.css" rel="stylesheet" />
+    <link href="~/Content/ionicons.min.css" rel="stylesheet" />
+    <link href="~/Content/AdminLTE.min.css" rel="stylesheet" />
+    <link href="~/Scripts/angular-ui-tree-master/dist/angular-ui-tree.css" rel="stylesheet" />
+    <link href="~/Content/skins/skin-blue.min.css" rel="stylesheet" />
+    <link href="~/Scripts/plugins/iCheck/all.css" rel="stylesheet" />
+    <link href="~/Scripts/plugins/timepicker/bootstrap-timepicker.css" rel="stylesheet" />
+    <link href="/Content/angular.css" rel="stylesheet" />
+    <link href="/Content/slide.and.push.css" rel="stylesheet" />
+    <link href="/Content/media.css" rel="stylesheet" />
+    <link href="/Content/page.css" rel="stylesheet" />
+    <link href="/Content/estat_new.css" rel="stylesheet" />
+    <link href="/Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="/Scripts/plugins/select2/select2.min.css" rel="stylesheet" />
+    <script src="/Scripts/ie-emulation-modes-warning.js"></script>
+    <script src="/Scripts/angular.js"></script>
+    <script src="/Scripts/angular.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- Custom styles for this template -->
+    <script src="/Scripts/ie10-viewport-bug-workaround.js"></script>
+    <script src="/Scripts/angular-cookies.min.js"></script>
+    <script src="/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="/Scripts/jquery.maskedinput.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <script src="/Scripts/i18n/angular-locale_pt-br.js"></script>
+    <script src="/Scripts/slide.and.push.js"></script>
+	<script src="/Scripts/angular-route.min.js"></script>
+    <script src="~/Scripts/angular-cookies.js"></script>
+    <script src="/app/Directives/iCheck.js"></script>
+    <script src="/app/Directives/CanvasThumbnail.js"></script>
+    <script src="/app/Directives/FormValidation.js"></script>
+
+
+    <!--JS Files-->
+    <script src="/Scripts/bootstrap.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/bootstrap-notify-master/bootstrap-notify.min.js"></script>
+    <script src="/Scripts/underscore-master/underscore-min.js"></script>
+    <script src="~/Scripts/angular-sanitize.min.js"></script>
+    <script src="~/app/Directives/iCheck.js"></script>
+    <script src="~/app/Directives/CanvasThumbnail.js"></script>
+    <script src="~/Scripts/ui-grid.js"></script>
+    <script src="~/Scripts/ui-grid.min.js"></script>
+    <script src="~/Scripts/notify.js"></script>
+    <script src="~/Scripts/notify.min.js"></script>
+    @* Angular UI Tree *@
+
+    @RenderSection("CSS", false)
+    <style>
+        .form-group .help-block {
+          display: none;
+        }
+
+        .form-group.has-error .help-block {
+          display: block;
+        }
+
+    </style>
+
+    <script src="/app/app.js"></script>
+
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini" ng-app="mainAppGerenciador">
+    <script>
+        $(function () {
+        });
+
+        function ajaxNotification(notify, tipo) {
+            console.log(notify);
+            r = notify;
+
+            var $listaErros = $('<div></div>');
+
+            if (angular.isDefined(notify)) {
+                if ((typeof notify) == 'string')
+                    $listaErros.append('<div>' + notify + '<div>');
+                if (!angular.isDefined(notify.ModelState) && angular.isDefined(notify.Message)) {
+                    $listaErros.append('<div>' + notify.Message + '<div>');
+                }
+
+                for (var key in notify.ModelState) {
+                    for (var i in notify.ModelState[key]) {
+                        $listaErros.append('<div>' + notify.ModelState[key][i] + '<div>');
+                    }
+                }
+            }
+            else if (angular.isDefined(notify.responseText)) {
+                $listaNotificacao.append('<div>' + notify.responseText + '<div>');
+            }
+
+            var texto = "";
+            for (var i = 0; i < $listaErros.length; i++) {
+                texto += $listaErros[i].innerHTML;
+            }
+            $.notify({
+                // options
+                message: texto
+            }, {
+                // settings
+                type: tipo
+            });
+        }
+    </script>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://localhost:11596/Default.html">Inicial</a></li>
+                    <li><a href="http://localhost:11596/Home/CadastroUsuario">CadastroUsuario</a></li>
+                    <li><a href="http://localhost:11596/Home/ConsultaUsuario">Consulta</a></li>
+                    <li><a href="http://localhost:11596/Campo">CAMPO (Padrão Portal)</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid ">
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+            </div>
+            <div class="col-sm-8 text-left">
+                <br />
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <p>Rodapé estudo SA</p>
+    </footer>
+
+            <!--Scripts.Render("~/bundles/bootstrap")-->
+            <!--Scripts.Render("~/bundles/angular")-->
+            @RenderSection("Scripts", false)
+
+</body>
+</html>

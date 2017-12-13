@@ -1,0 +1,222 @@
+﻿.listagem_anos b 
+{
+	border-bottom:1px solid gray;
+	display:block;		
+	margin:0px;
+}
+
+ul
+{
+	list-style:none;	
+}
+
+.letras li{	
+	
+	line-height: 1px;
+	list-style:none;
+	float:left;	
+	margin-right: 10px;
+}
+
+.less#content
+{
+	width: 540px !important;
+}
+
+#content ul li
+{
+	float:left; 
+	margin-right: 10px;
+	list-style-type:none;
+}
+
+.titleConsulta
+{
+	display:block;
+	border-bottom: solid 1px gray;
+	font-weight:bold;
+}
+
+.mapLabel 
+{
+	font-size:10px;
+	font-weight:bold;
+	position:absolute;
+	text-align:center;
+}
+
+.erros
+{
+	border: solid 1px #CCCCCC;	
+	color: #336699;	
+	width: 535px;
+}
+
+.selected
+{
+	background-color: #336699;
+	color: #FFFFFF;
+}
+
+
+.erros p
+{
+	margin: 10px;
+}
+
+.nome_opcoes
+{
+	margin-bottom: 20px;	
+}
+
+.lblAnoList
+{
+	font-size: 12px;
+	margin-top: 20px;	
+	font-weight: bold;
+}
+
+.GridDados
+{
+	margin-bottom: 15px;	
+	margin-top: 0px !important;
+	width: 740px;
+}
+
+#dados li
+{	
+	float:left;
+	font-size:1.1em;
+	font-weight:bold;
+	height: 40px;
+	width:178px;	
+	margin-right:0 !important;
+	text-align:center;	
+}
+
+#dados li a
+{
+	color: #666666 !important;	
+	text-decoration:none;	
+}
+
+#dados .dados_item1
+{
+	border-top: 1px solid #999999;
+	border-bottom:1px solid #999999;	
+	border-left:1px solid #999999;
+}
+
+#dados .dados_item2
+{
+	border-top: 1px solid #999999;
+	border-bottom:1px solid #999999;	
+	border-left:1px solid #CCCCCC;	
+}
+
+#dados .dados_item3
+{
+	border-top: 1px solid #999999;
+	border-bottom:1px solid #999999;
+	border-left:1px solid #CCCCCC;	
+	border-right:1px solid #999999;
+}
+
+.GrupoDelito
+{
+    background-color: #336699;
+    color: #FFF;    
+    display: block;
+    width: 730px;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px 5px;    
+}
+
+/********************/
+/* NOVA ESTATISTICA */
+/********************/
+
+/* LABELS */
+.Titulo, .Pesquisa, .Tipos{display: block; padding: 10px 0px 10px 10px; color:#003399; font-size: 18px; font-weight: bold; font-family: Verdana, Arial, Helvetica, sans-serif; margin: 0px;}
+.SemTaxa {color: #336699;}
+.SemDados {color: #336699; font-size:1.2em; line-height:20px; }
+.Links {text-decoration:none; color:#003399; font-size: 18px; font-weight: bold; font-family: Verdana, Arial, Helvetica, sans-serif; margin: 0px;}
+.lbAnoDrop, .lbRegiaoDrop, .lbMunicDrop, .lbDistDrop {width: 300px; display:block; padding: 0px 0px 5px 0px;}
+.Anos {display:block; width:780px; padding: 10px 0px 10px 20px; color:#003399; font-size: 18px; font-weight: bold; font-family: Verdana, Arial, Helvetica, sans-serif; margin: 0px;}
+/**********/
+
+/* DROPDOWN */
+.ddlAnos, .ddlReg, .ddlMunic, .ddlDist {width: 300px; border: 1px solid #89a6c4; color: #336699; background-color: #EAEFF5;}
+.ddlDist:disabled { background-color: #BBBBBB;}
+/************/
+
+/* DIV */
+.divGridTaxa {display:inline; width: 780px !important; position: relative; left: 80px; margin: 0px 0px 2px 0px;}
+.divSemTaxa {width: 620px; border: 1px solid #CCCCCC; padding: 8px 7px 8px 7px; margin: 0px 0px 0px 160px;}
+.divMsg {width: 770px; border: 1px solid #CCCCCC; padding: 8px 0px 8px 10px;}
+.divTaxaFonte {display:inline; width: 780px !important; position: relative; left: 80px; margin: 0px 0px 2px 0px;}
+.divAnual {display:inline; width: 780px !important; position: relative; left: 80px; margin: 0px 0px 2px 0px;}
+.divLateral {display:inline; float:left; width:140px; margin: 0px 10px 2px 0px;}
+.divMensal {display:inline; float:left; width:780px; margin: 0px 10px 2px 0px;}
+.divAnoDrop {display:inline; width: 300px; position: relative; left: 310px; margin: 2px 0px 2px 0px;}
+.divAnos {width:780px;}
+.divRegiao {display:inline; float: left; width: 300px; margin: 2px 10px 2px 0px;}
+.divMunic {display:inline; float: left; width: 300px; margin: 2px 10px 2px 0px;}
+.divDist {display:inline; float: left; width: 300px; margin: 2px 0px 2px 0px;}
+.divTipos {width: 940px; height: 50px; padding: 10px 0px 0px 0px;}
+.divExport {position:relative; width:940px; height:25px; padding: 2px 0px 2px 0px;}
+.divExibTaxa, .divExibOpt {display: inline; float: left; width: 220px; margin: 2px 10px 2px 0px;}
+.divExibAnual {display: inline; float: left; width: 220px; margin: 2px 10px 2px 0px;}
+.divExibMensal {display: inline; float: left; width: 220px; margin: 2px 10px 2px 0px;}
+.divExibPolicial {display: inline; float: left; width: 220px; margin: 2px 0px 2px 0px;}
+.divLinks {width:940px; margin: 10px 0px 10px 0px;}
+.divVitimas {display: inline; float: left; width: 220px; margin: 2px 10px 2px 0px;}
+.divProcedimento {display: inline; float: left; width: 220px; margin: 2px 10px 2px 0px;}
+
+.divBigGrid {overflow:AUTO; width:940px; }
+/*******/
+
+
+/* BOTÕES */
+.btnAnual, .btnMensal, .btnPolicial, .btnVitimas, .btnProcedimento, .btnOpt {width: 220px; display:block;}
+.btnTaxa, .btnPolicial, .btnProcedimento, .btnOpt {text-align:center; margin-left: 0; margin-right: 0; border: 1px #FFFFFF solid; background:#336699; color:#FFFFFF; font-size: 12px; font-weight: bold; padding: 16px 0px 16px 0px !important; text-decoration: none;}
+.btnLateral {width: 140px; display:block; margin: 0px 0px 8px 0px;}
+.btn {text-align:center; margin-left: 0; margin-right: 0; border: 1px #FFFFFF solid; background:#336699; color:#FFFFFF; font-size: 12px; font-weight: bold; padding: 10px 0px 10px 0px; text-decoration: none;}
+.btnClicked {text-align:center; margin-left: 0; margin-right: 0; border: 1px #FFFFFF solid; background:#002F62; color:#FFFFFF; font-size: 12px; font-weight: bold; padding: 10px 0px 10px 0px; text-decoration: none;}
+.btnPolClicked {text-align:center; margin-left: 0; margin-right: 0; border: 1px #FFFFFF solid; background:#002F62; color:#FFFFFF; font-size: 12px; font-weight: bold; padding: 16px 0px 16px 0px; text-decoration: none;}
+.btn:hover {background: #002F62;}
+/**********/
+
+/* GRIDVIEW */
+.grdEspaco {margin-left: 450px;}
+.grid {border: 0px none;}
+.gridAnual, .gridTaxa, .gridMensal {width: 780px;}
+.grid_header {text-align:center; border: 0px none; color:#FFFFFF; background-color:#336699; height: 25px;  padding: 5px 0px;}
+.grid_headernat {text-align:center; border: 0px none; color:#FFFFFF; background-color:#336699; height: 25px;  padding: 5px 0px; width:220px;}
+.grid_headermes {text-align:center; border: 0px none; color:#FFFFFF; background-color:#336699; height: 25px;  padding: 5px 0px; width:40px;}
+.grid_row {border: 0px none; color:#336699; background-color: #FFFFFF; height: 25px;}
+.grid_alterrow {border: 0px none; color:#336699; background-color: #DDDDDD; height: 25px;}
+.grid_nat {width:220px !important; border: 1px solid #CCCCCC; padding: 10px 5px;}
+.grid_mes {text-align:center; width:40px !important; border: 1px solid #CCCCCC; padding: 10px 0px;}
+.grid_taxaitem {text-align:center; width:140px !important; border: 1px solid #CCCCCC; padding: 10px 0px;}
+.grid_anualitem {text-align:center; width:140px !important; border: 1px solid #CCCCCC; padding: 10px 0px;}
+.grid_footer td {text-align:center; border: 1px none; color:#FFFFFF; background-color:#336699; height: 25px; vertical-align:middle;}
+/************/
+.gridAnualSpan {min-width:780px; }
+.grid_desc {width:220px ; border: 1px solid #CCCCCC; vertical-align:middle; padding: 0px 0px 0px 5px;}
+.grid_mesSpan {text-align:center; width:35px ; border: 1px solid #CCCCCC; vertical-align:middle;}
+.gridCenter {margin-left:auto; margin-right:auto;}
+
+
+/********************/
+
+/********************/
+
+/* MAPAS */
+.lkRegioes {display:block; text-align:center; width:200px; height:20px; background:#336699; color:#FFFFFF; font-size: 12px; padding:10px 0px 2px 0px; text-decoration:none;}
+.lkRegiao {display:block; text-align:center; width:200px; height:15px; background:#336699; color:#FFFFFF !important; font-size: 10px; padding:8px 0px 2px 0px; text-decoration:none;}
+.lkMunic {display:block; text-align:center; width:190px; height:20px; background:#336699; color:#FFFFFF !important; font-size: 10px; padding:8px 0px 2px 0px; text-decoration:none;}
+/*********/
+
+/********************/

@@ -1,0 +1,57 @@
+/* Checkboxs */
+
+#servicos.telefones #content form  {margin:0 0 0 0;}
+
+#content #mapaSSP form  .markerType label {
+	float: none;
+	width: 170px;
+}
+
+.markerType {
+	clear: both;
+	padding:10px 0 10px 10px;
+	height:250px;
+}
+
+div.markerType label {
+	font-weight: normal;
+	float: left;
+	margin-bottom: 20px;
+	margin-right:10px;
+	color: #333;
+}
+
+#content div.markerType label span {
+	height: 30px;
+	font-size:11px;
+	font-weight:bold;
+	color:#002F62;
+	padding-left: 55px;
+	line-height:14px;
+	margin-left: 10px;
+	display: block;
+	width: 100px;
+}
+ #content .markerType input[type=checkbox]{
+	line-height: 30px;
+	float: left;
+}  
+
+span.delegacia 			{ background: url(../servicos/GMap/Icons/ico_dp.png) no-repeat 10px -3px; }
+span.delegacia-mulher 	{ background: url(../servicos/GMap/Icons/ico_delegacia-mulher.png) no-repeat 10px -3px }
+span.detran				{ background: url(../servicos/GMap/Icons/ico_detran.png) no-repeat 10px -3px; }
+span.cinetran			{ background: url(../servicos/GMap/Icons/ico_cinetran.png) no-repeat 10px -3px; }
+span.acadepol			{ background: url(../servicos/GMap/Icons/ico_ap.png) no-repeat 10px -3px; }
+span.outros				{ background: url(../servicos/GMap/Icons/ico_outros.png) no-repeat 10px -2px; }
+span.CP                		{ background: url(../servicos/GMap/Icons/ico_CP.png) no-repeat 10px -2px; }
+
+/*span.iml 				{ background: url(../servicos/GMap/Icons/ico_iml.png) no-repeat 10px -2px; }*/
+/*span.pm 				{ background: url(../servicos/GMap/Icons/ico_policia-militar.png) no-repeat 10px -2px; }
+span.pr 				{ background: url(../servicos/GMap/Icons/ico_policia-rodoviaria.png) no-repeat 10px -2px; }*/
+/*span.pa 				{ background: url(../servicos/GMap/Icons/ico_policia-ambiental.png) no-repeat 10px -2px; }*/
+span.pch 				{ background: url(../servicos/GMap/Icons/ico_policia-choque.png) no-repeat 10px -2px; }
+/*span.cb				{ background: url(../servicos/GMap/Icons/ico_corpo-bombeiros.png) no-repeat 10px -2px; }*/
+/*span.sptc			{ background: url(../servicos/GMap/Icons/ico_sptc.png) no-repeat 10px -2px; }*/
+span.cfc				{ background: url(../servicos/GMap/Icons/ico_cfc.png) no-repeat 10px -2px; }
+span.clinicas		{ background: url(../servicos/GMap/Icons/ico_clinicas.png) no-repeat 10px -2px; }
+
